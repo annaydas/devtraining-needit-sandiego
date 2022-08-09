@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <includes/>
+        <macroponent display_value="Home">5667612d978111102ece322e6253af65</macroponent>
+        <name>rich_text_7_html</name>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[/**
+  * @param {params} params
+  * @param {api} params.api
+  * @param {TransformApiHelpers} params.helpers
+  */
+function evaluateProperty({api, helpers}) {
+	return '<h3 style="padding:0; margin:0;font-weight:normal;">Min: ' + api.data.get_weather_info__rest_1.output.result.main.temp_min + ' &degC</h3>';
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-05 08:39:21</sys_created_on>
+        <sys_id>c54296fe974111102ece322e6253af57</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>rich_text_7_html</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_ux_client_script_c54296fe974111102ece322e6253af57</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-06 06:28:02</sys_updated_on>
+        <type>transform</type>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>188d588cdb9c7810e26fd7c8f4961962</instance_id>
+        <instance_name>dev117135</instance_name>
+        <name>sys_ux_client_script_c54296fe974111102ece322e6253af57</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;includes/&gt;&lt;macroponent display_value="Home"&gt;5667612d978111102ece322e6253af65&lt;/macroponent&gt;&lt;name&gt;rich_text_7_html&lt;/name&gt;&lt;required_translations&gt;[ ]&lt;/required_translations&gt;&lt;script&gt;&lt;![CDATA[/**
+  * @param {params} params
+  * @param {api} params.api
+  * @param {TransformApiHelpers} params.helpers
+  */
+function evaluateProperty({api, helpers}) {
+	return '&lt;h3 style="padding:0; margin:0;font-weight:normal;"&gt;Min: ' + api.data.get_weather_info__rest_1.output.result.main.temp_min + ' &amp;degC&lt;/h3&gt;';
+}]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-05 08:39:21&lt;/sys_created_on&gt;&lt;sys_id&gt;c54296fe974111102ece322e6253af57&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;rich_text_7_html&lt;/sys_name&gt;&lt;sys_package display_value="NeedIt" source="x_58872_needit"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="NeedIt"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_c54296fe974111102ece322e6253af57&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-06 06:28:02&lt;/sys_updated_on&gt;&lt;type&gt;transform&lt;/type&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>2048713209</payload_hash>
+        <record_name>rich_text_7_html</record_name>
+        <reverted_from/>
+        <source>e61545e9970111102ece322e6253af45</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-06 06:28:02</sys_created_on>
+        <sys_id>afcd7a03974111102ece322e6253afc0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18271d6dd2f0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-06 06:28:02</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>67cd7a03ae4111104ad5380439117dc0</update_guid>
+        <update_guid_history>67cd7a03ae4111104ad5380439117dc0:2048713209,50949a32c4c1111034493955aac740e0:321675805,01425abe60811110a9dd4db4b74d747e:-1823924669</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-06 12:41:00</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>2db3bc1719794f1c90f4821200d3dbe4</sys_id>
+        <sys_metadata>c54296fe974111102ece322e6253af57</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>rich_text_7_html</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_c54296fe974111102ece322e6253af57</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_c54296fe974111102ece322e6253af57">afcd7a03974111102ece322e6253afc0</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-06 12:41:00</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

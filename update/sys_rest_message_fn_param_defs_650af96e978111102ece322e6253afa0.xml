@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_param_defs">
+    <sys_rest_message_fn_param_defs action="INSERT_OR_UPDATE">
+        <name>q</name>
+        <order>100</order>
+        <rest_message_function display_value="GET Current Weather">83e9796e978111102ece322e6253af8b</rest_message_function>
+        <sys_class_name>sys_rest_message_fn_param_defs</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-04 12:15:53</sys_created_on>
+        <sys_id>650af96e978111102ece322e6253afa0</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>q</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_rest_message_fn_param_defs_650af96e978111102ece322e6253afa0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-04 12:17:31</sys_updated_on>
+        <value>${city}</value>
+    </sys_rest_message_fn_param_defs>
+</record_update>

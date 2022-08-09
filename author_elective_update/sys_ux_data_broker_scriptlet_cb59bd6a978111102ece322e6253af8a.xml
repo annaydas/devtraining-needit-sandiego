@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_scriptlet">
+    <sys_ux_data_broker_scriptlet action="DELETE">
+        <api_name>x_58872_needit.GET Current Weather - Scriptlet</api_name>
+        <description/>
+        <mutates_server_data>false</mutates_server_data>
+        <name>GET Current Weather - Scriptlet</name>
+        <output_schema/>
+        <private>false</private>
+        <props>[&#13;
+  {&#13;
+    "name": "city_name",&#13;
+    "label": "City Name",&#13;
+    "fieldType": "string"&#13;
+  },&#13;
+  {&#13;
+    "name": "api_key",&#13;
+    "label": "API Key",&#13;
+    "fieldType": "string"&#13;
+  }&#13;
+]</props>
+        <required_translations>[ {
+  "message" : "API Key",
+  "comment" : ""
+}, {
+  "message" : "City Name",
+  "comment" : ""
+} ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[function transform(input) {
+
+	var result = {};
+	var resArr = [];
+	resArr.push(input.city_name);
+	resArr.push(input.api_key);
+	//resArr.push(gs.getUser().getDisplayName());
+	
+	return resArr;
+	
+
+// 	try { 
+// 		var r = new sn_ws.RESTMessageV2('x_58872_needit.OpenWeather API', 'GET Current Weather');
+// 		r.setStringParameterNoEscape('apiKey', input.api_key);
+// 		r.setStringParameterNoEscape('city', input.city_name);
+
+// 		var response = r.execute();
+// 		var responseBody = response.getBody();
+// 		var httpStatus = response.getStatusCode();
+
+// 		result.responseBody = responseBody;
+// 		result.httpStatus = httpStatus;
+// 	}
+// 	catch(ex) {
+// 		var message = ex.message;
+// 		result.message = message;
+// 	}
+
+	//return result;
+}]]></script>
+        <sys_class_name>sys_ux_data_broker_scriptlet</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-04 12:24:38</sys_created_on>
+        <sys_id>cb59bd6a978111102ece322e6253af8a</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>GET Current Weather - Scriptlet</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_ux_data_broker_scriptlet_cb59bd6a978111102ece322e6253af8a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-04 12:41:47</sys_updated_on>
+    </sys_ux_data_broker_scriptlet>
+    <sys_translated_text action="DELETE" query="documentkey=cb59bd6a978111102ece322e6253af8a"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>188d588cdb9c7810e26fd7c8f4961962</instance_id>
+        <instance_name>dev117135</instance_name>
+        <name>sys_ux_data_broker_scriptlet_cb59bd6a978111102ece322e6253af8a</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_data_broker_scriptlet"&gt;&lt;sys_ux_data_broker_scriptlet action="INSERT_OR_UPDATE"&gt;&lt;api_name&gt;x_58872_needit.GET Current Weather - Scriptlet&lt;/api_name&gt;&lt;description/&gt;&lt;mutates_server_data&gt;false&lt;/mutates_server_data&gt;&lt;name&gt;GET Current Weather - Scriptlet&lt;/name&gt;&lt;output_schema/&gt;&lt;private&gt;false&lt;/private&gt;&lt;props&gt;[&amp;#13;
+  {&amp;#13;
+    "name": "city_name",&amp;#13;
+    "label": "City Name",&amp;#13;
+    "fieldType": "string"&amp;#13;
+  },&amp;#13;
+  {&amp;#13;
+    "name": "api_key",&amp;#13;
+    "label": "API Key",&amp;#13;
+    "fieldType": "string"&amp;#13;
+  }&amp;#13;
+]&lt;/props&gt;&lt;required_translations&gt;[ {
+  "message" : "API Key",
+  "comment" : ""
+}, {
+  "message" : "City Name",
+  "comment" : ""
+} ]&lt;/required_translations&gt;&lt;schema_version&gt;1.0.0&lt;/schema_version&gt;&lt;script&gt;&lt;![CDATA[function transform(input) {
+
+	var result = {};
+	var resArr = [];
+	resArr.push(input.city_name);
+	resArr.push(input.api_key);
+	//resArr.push(gs.getUser().getDisplayName());
+	
+	return resArr;
+	
+
+// 	try { 
+// 		var r = new sn_ws.RESTMessageV2('x_58872_needit.OpenWeather API', 'GET Current Weather');
+// 		r.setStringParameterNoEscape('apiKey', input.api_key);
+// 		r.setStringParameterNoEscape('city', input.city_name);
+
+// 		var response = r.execute();
+// 		var responseBody = response.getBody();
+// 		var httpStatus = response.getStatusCode();
+
+// 		result.responseBody = responseBody;
+// 		result.httpStatus = httpStatus;
+// 	}
+// 	catch(ex) {
+// 		var message = ex.message;
+// 		result.message = message;
+// 	}
+
+	//return result;
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_ux_data_broker_scriptlet&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-04 12:24:38&lt;/sys_created_on&gt;&lt;sys_id&gt;cb59bd6a978111102ece322e6253af8a&lt;/sys_id&gt;&lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;&lt;sys_name&gt;GET Current Weather - Scriptlet&lt;/sys_name&gt;&lt;sys_package display_value="NeedIt" source="x_58872_needit"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="NeedIt"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_data_broker_scriptlet_cb59bd6a978111102ece322e6253af8a&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-04 12:41:47&lt;/sys_updated_on&gt;&lt;/sys_ux_data_broker_scriptlet&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=cb59bd6a978111102ece322e6253af8a"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1400037140</payload_hash>
+        <record_name>GET Current Weather - Scriptlet</record_name>
+        <reverted_from/>
+        <source>e61545e9970111102ece322e6253af45</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-04 12:41:47</sys_created_on>
+        <sys_id>a2208ea297c111102ece322e6253afba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18268e04fd40000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-04 12:41:47</sys_updated_on>
+        <type>Data Broker Scriptlet</type>
+        <update_guid>aa208ea21dc111105317f60d4fb78ab9</update_guid>
+        <update_guid_history>aa208ea21dc111105317f60d4fb78ab9:1400037140,f7fff1e23ac111107134668d16bb37c2:90656820,fdafb5a23ec11110616bd1d087e6dbf3:703737668,e1ae3deef381111060c2fdb125ed6b8b:-1412431167,2b9e7dee7a811110a31ef112ec1112f7:-953342303,01bd79eefd81111020c45204d6319557:188136045,933c3dee588111108a12f9cb6aa70379:962017933</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-04 12:42:28</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_data_broker_scriptlet">sys_ux_data_broker_scriptlet</sys_db_object>
+        <sys_id>566804e1e03940b0a70eeb304a6c6b90</sys_id>
+        <sys_metadata>cb59bd6a978111102ece322e6253af8a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GET Current Weather - Scriptlet</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sys_ux_data_broker_scriptlet_cb59bd6a978111102ece322e6253af8a</sys_update_name>
+        <sys_update_version display_value="sys_ux_data_broker_scriptlet_cb59bd6a978111102ece322e6253af8a">a2208ea297c111102ece322e6253afba</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-04 12:42:28</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
